@@ -4,6 +4,7 @@ project:
     package:
         name: cumulusCI
         api_version: '52.0'
+        namespace: naples20211004
     git:
     source_format: sfdx
 
@@ -22,3 +23,13 @@ tasks:
     run_tests:
         options:
             required_org_code_coverage_percent: 75
+
+flows:
+    config_qa:
+        steps:
+            3:
+                task: load_dataset
+    config_dev:
+        steps:
+            3:
+                task: load_dataset
