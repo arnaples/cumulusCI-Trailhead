@@ -4,6 +4,7 @@ project:
     package:
         name: cumulusCI
         api_version: '52.0'
+        namespace: naples20211004
     git:
     source_format: sfdx
 
